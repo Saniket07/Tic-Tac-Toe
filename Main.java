@@ -13,12 +13,19 @@ class Main {
     boolean gameOver = false;
     Scanner scanner = new Scanner(System.in);
 
+
+
+
+
+
     while (!gameOver) {
       printBoard(board);
       System.out.print("Player " + player + " enter: ");
       int row = scanner.nextInt();
       int col = scanner.nextInt();
       System.out.println();
+
+
 
       if (board[row][col] == ' ') {
         board[row][col] = player; // place the element
@@ -27,6 +34,7 @@ class Main {
         {
                 System.out.println("Game Draw !!!");
                 break;
+
 }
         if (gameOver) {
           System.out.println("Player " + player + " has won: ");
@@ -36,6 +44,7 @@ class Main {
           // } else {
           // player = 'X';
           // }
+          
           player = (player == 'X') ? 'O' : 'X';
         }
       } else {
