@@ -12,6 +12,9 @@ class Main {
     char player = 'X';
     boolean gameOver = false;
     Scanner scanner = new Scanner(System.in);
+      
+
+      
 
     while (!gameOver) {
       printBoard(board);
